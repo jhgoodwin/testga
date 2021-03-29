@@ -5,6 +5,8 @@ jobs:
   ubuntu-job:
     runs-on: ubuntu-20.04
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: List files
         shell: bash
         run: |
@@ -16,6 +18,8 @@ jobs:
   windows-job:
     runs-on: windows-2019
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: Run debug script
         run: ${GITHUB_WORKSPACE}/debug.sh
         shell: bash
