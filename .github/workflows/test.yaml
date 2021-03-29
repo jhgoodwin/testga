@@ -8,7 +8,7 @@ jobs:
       - name: List files
         shell: bash
         run: |
-        ls -alR ${GITHUB_WORKSPACE}/..
+          ls -alR ${GITHUB_WORKSPACE}/..
       - name: Run debug script
         run: ${GITHUB_WORKSPACE}/debug.sh
         shell: bash
