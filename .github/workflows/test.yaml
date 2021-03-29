@@ -13,7 +13,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: debug-logs
-          path: ${GITHUB_WORKSPACE}/debug.log
+          path: debug.log
 
   windows-job:
     runs-on: windows-2019
@@ -26,4 +26,4 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: debug-logs
-          path: ${GITHUB_WORKSPACE}/debug.log
+          path: debug.log
