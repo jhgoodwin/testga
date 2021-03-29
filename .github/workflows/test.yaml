@@ -5,6 +5,10 @@ jobs:
   ubuntu-job:
     runs-on: ubuntu-20.04
     steps:
+      - name: List files
+        shell: bash
+        run: |
+        ls -alR ${GITHUB_WORKSPACE}/..
       - name: Run debug script
         run: ${GITHUB_WORKSPACE}/debug.sh
         shell: bash
