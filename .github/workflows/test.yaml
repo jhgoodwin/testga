@@ -6,12 +6,12 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Run debug script
-        run: ${{GITHUB_WORKSPACE}}/debug.sh
+        run: ${GITHUB_WORKSPACE}/debug.sh
         shell: bash
 
   windows-job:
     runs-on: windows-2019
     steps:
       - name: Run debug script
-        run: ${{GITHUB_WORKSPACE}}/debug.sh
+        run: ${GITHUB_WORKSPACE}/debug.sh
         shell: bash
