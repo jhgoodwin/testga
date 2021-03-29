@@ -8,7 +8,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run debug script
-        run: ${GITHUB_WORKSPACE}/debug.sh > debug.log
+        run: ${GITHUB_WORKSPACE}/debug.sh > debug-ubuntu.log
         shell: bash
       - uses: actions/upload-artifact@v2
         with:
@@ -21,7 +21,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run debug script
-        run: ${GITHUB_WORKSPACE}/debug.sh > debug.log
+        run: ${GITHUB_WORKSPACE}/debug.sh > debug-windows.log
         shell: bash
       - uses: actions/upload-artifact@v2
         with:
